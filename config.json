@@ -1,0 +1,19 @@
+{
+    "name": "Systemd Viewer",
+    "shortName": "systemdviewer",
+    "version": "0.0.1",
+    "author": "Your Name",
+    "description": "Lists systemd services states for Linux endpoints in a new tab.",
+    "hasAdminPanel": false,
+    "homepage": "https://www.example.com",
+    "changelogUrl": "https://raw.githubusercontent.com/example/systemdviewer/master/changelog.md",
+    "configUrl": "https://raw.githubusercontent.com/example/systemdviewer/master/config.json",
+    "downloadUrl": "https://github.com/example/systemdviewer/archive/master.zip",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/example/systemdviewer.git"
+    },
+    "versionHistoryUrl": "https://api.github.com/repos/example/systemdviewer/tags",
+    "meshCentralCompat": ">=1.1.35"
+  }
+  

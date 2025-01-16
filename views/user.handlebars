@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script type="text/javascript" src="scripts/common-0.0.1.js"></script>
+</head>
+<body style="font-family:Arial, sans-serif; margin:0; padding:10px;" onload="doOnLoad();">
+<h2>Systemd Viewer</h2>
+<button onclick="requestServiceList();">Refresh Service List</button>
+
+<div id="serviceList" style="margin-top:15px; white-space: pre; background-color:#f8f8f8; padding:10px; border:1px solid #ccc;">
+  <em>Click "Refresh Service List" to retrieve the current systemd services from the agent.</em>
+</div>
+
+<script type="text/javascript">
+function doOnLoad() {
+  // Subscribe to plugin events from the server so we can update the list
+  if (typeof parent.pluginHandler.systemdviewer === 'undefined') {
+    parent.pluginHandler.systemdviewer = {};
+  }
+  // When the server sends us the updated list
+  parent.pluginHandler.systemdviewer.updateServiceList = function(message) {
+    var serviceDiv = document.getElementById('serviceList');
+    if (message.event.services.length === 0) {
+      serviceDiv.innerText = "No services found or no data returned.";
+      return;
+    }
+    serviceDiv.innerText = message.event.services.join("\n");
+  };
+}
+
+// Called when the user clicks "Refresh Service List"
+function requestServiceList() {
+  // Tell the server to instruct the agent to gather the systemd data
+  parent.meshserver.send({
+    action: "plugin",
+    plugin: "systemdviewer",
+    pluginaction: "getServiceList"
+  });
+}
+</script>
+</body>
+</html>
