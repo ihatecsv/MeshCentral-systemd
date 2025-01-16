@@ -1,7 +1,7 @@
 {
     "name": "Systemd Viewer",
     "shortName": "systemdviewer",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Your Name",
     "description": "Lists systemd services states for Linux endpoints in a new tab.",
     "hasAdminPanel": false,
