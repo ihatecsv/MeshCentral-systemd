@@ -6,14 +6,14 @@
     "description": "Lists systemd services states for Linux endpoints in a new tab.",
     "hasAdminPanel": false,
     "homepage": "https://www.example.com",
-    "changelogUrl": "https://raw.githubusercontent.com/example/systemdviewer/master/changelog.md",
-    "configUrl": "https://raw.githubusercontent.com/example/systemdviewer/master/config.json",
-    "downloadUrl": "https://github.com/example/systemdviewer/archive/master.zip",
+    "changelogUrl": "https://raw.githubusercontent.com/ihatecsv/MeshCentral-systemd/master/changelog.md",
+    "configUrl": "https://raw.githubusercontent.com/ihatecsv/MeshCentral-systemd/refs/heads/main/config.json",
+    "downloadUrl": "https://github.com/ihatecsv/MeshCentral-systemd/archive/master.zip",
     "repository": {
       "type": "git",
-      "url": "https://github.com/example/systemdviewer.git"
+      "url": "https://github.com/ihatecsv/MeshCentral-systemd.git"
     },
-    "versionHistoryUrl": "https://api.github.com/repos/example/systemdviewer/tags",
+    "versionHistoryUrl": "https://api.github.com/repos/ihatecsv/MeshCentral-systemd/tags",
     "meshCentralCompat": ">=1.1.35"
   }
   
