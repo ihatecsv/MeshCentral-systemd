@@ -8,7 +8,7 @@
     "homepage": "https://www.example.com",
     "changelogUrl": "https://raw.githubusercontent.com/ihatecsv/MeshCentral-systemd/master/changelog.md",
     "configUrl": "https://raw.githubusercontent.com/ihatecsv/MeshCentral-systemd/refs/heads/main/config.json",
-    "downloadUrl": "https://github.com/ihatecsv/MeshCentral-systemd/archive/master.zip",
+    "downloadUrl": "https://github.com/ihatecsv/MeshCentral-systemd/archive/main.zip",
     "repository": {
       "type": "git",
       "url": "https://github.com/ihatecsv/MeshCentral-systemd.git"
