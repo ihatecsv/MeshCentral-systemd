@@ -68,6 +68,7 @@ module.exports.systemdviewer = function (parent) {
             case 'getServiceList':
                 // Send an action down to the agent
                 // myparent.dbNodeKey is the node’s unique ID for the agent
+                console.log("About to send getServiceList to agent", myparent.dbNodeKey);
                 obj.meshServer.webserver.wsagents[myparent.dbNodeKey].send(JSON.stringify({
                     action: "plugin",
                     plugin: "systemdviewer",
